@@ -1,0 +1,140 @@
+/*
+Generalidades del documento
+*/
+body {
+    display: flex;
+    flex-flow: column;
+    font-family: 'Playfair Display', serif;
+    color: #8B8B8C;
+    background-color: #0D0D0B;
+    transition: all 0.75s;
+}
+
+body > * {
+    transition: all 0.75s;
+}
+
+/* Paleta de colores
+aux {
+    color: #F2F2F2;
+    color:#8B8B8C;
+    color: #595958;
+    color: #25261F;
+    color: #0D0D0B;
+}
+/*
+
+ */
+/*
+Parte del header
+*/
+
+header {
+    opacity: 85%;
+    background-color: #25261F;
+    margin-bottom: auto;
+
+    top:0;
+    left:0;
+    right: 0;
+
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+h1 {
+   color: #F2F2F2;
+    font-size: 4em;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+h2 {
+    font-size: 4em;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    color: #8B8B8C;
+    transition: all 0.75s;
+}
+
+
+article{
+    background-color:#25261F;
+    color: #595958;
+    opacity: 75%;
+}
+
+
+article.introduction{
+    text-align: match-parent;
+    margin: 8em 8em 2em;
+    padding: 3em;
+}
+
+article:hover h2 {
+    color:white;
+    transition: all 0.75s;
+}
+
+section.inside > article {
+    margin: 3em 3em 1em;
+    padding: 2em;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+article .paragraph {
+    font-size: large;
+    text-align: justify;
+    transition: all 0.75s;
+}
+
+article.introduction > p {
+    margin: 1em;
+}
+
+article:hover > .paragraph {
+    transform: scale(110%);
+    color: #F2F2F2;
+    transition: all 0.75s;
+}
+
+
+@media only screen and (min-width: 640px) {
+    section.inside {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 0;
+        grid-row-gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1380px) {
+    section.inside {
+        display: grid;
+        grid-template-columns: 45em 45em;
+        grid-template-rows: auto;
+    }
+}
+
+footer {
+    opacity: 85%;
+    background-color: #25261F;
+    margin-top: auto;
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+    right: 0;
+}
+
+a {
+    color: white;
+}
